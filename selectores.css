@@ -1,0 +1,28 @@
+.button::before {
+  content: "Pasa por encima";
+}
+
+.button:hover {
+  color: white;
+  background-color: green;
+}
+
+.button::before {
+  content: "hecho";
+}
+
+#example {
+  position: relative;
+}
+#example-checkbox {
+  display: none;
+}
+#example-checkbox:checked + #example:after {
+  content: "Hide";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+}
